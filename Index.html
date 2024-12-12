@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="validation.js" defer></script>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: normal;
+      }
+      body {
+        background: pink;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        margin: 10px 0;
+      }
+      .btn,
+      h1 {
+        text-transform: uppercase;
+      }
+      form {
+        padding: 40px;
+        background: white;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        width: 450px;
+        flex-direction: column;
+        gap: 30px;
+      }
+      div {
+        display: flex;
+        gap: 15px;
+        justify-content: space-around;
+      }
+      input {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.201);
+        font-size: 18px;
+        padding: 2px;
+        width: 100%;
+      }
+
+      .btn {
+        padding: 10px;
+        font-size: 18px;
+        background: rebeccapurple;
+        cursor: pointer;
+        color: white;
+        border-radius: 10px;
+      }
+      .js-btn {
+        cursor: not-allowed;
+        background: rgba(102, 51, 153, 0.514);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Registration form</h1>
+      <div class="input-divs">
+        <label for="text"><i class="fa-solid fa-user"></i></label>
+        <input type="text" id="userName" placeholder="Write username" />
+      </div>
+      <div class="input-divs">
+        <label for="number"><i class="fa-solid fa-phone"></i></label>
+        <input type="text" id="phoneNo" placeholder="(+91) Write phone no." />
+      </div>
+      <div class="input-divs">
+        <label for="mail"><i class="fa-solid fa-envelope"></i></label>
+        <input type="mail" id="mail" placeholder="Write mail" />
+      </div>
+      <div class="input-divs">
+        <label for="password"><i class="fa-solid fa-lock"></i></label>
+        <input type="password" id="password" placeholder="Write password" />
+      </div>
+      <div class="input-divs">
+        <label for="c-password"><i class="fa-solid fa-lock"></i></label>
+        <input type="password" placeholder="Rewrite password" id="c-password" />
+      </div>
+
+      <button class="btn">Register</button>
+    </form>
+  </body>
+</html>
